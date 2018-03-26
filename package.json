@@ -1,0 +1,26 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pftiller/personal-website.git"
+  },
+  "author": "Paul Tiller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pftiller/personal-website/issues"
+  },
+  "homepage": "https://github.com/pftiller/personal-website#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-route": "^1.6.9",
+    "angular-ui-bootstrap": "^2.5.6",
+    "express": "^4.16.3"
+  }
+}

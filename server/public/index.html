@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Paul Tiller's Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <!-- AngularJS -->
+  <script type="text/javascript" src="vendors/angular.min.js"></script>
+  <!-- ngRoute -->
+  <script type="text/javascript" src="vendors/angular-route.min.js"></script>
+  <!-- Angular Animate -->
+  <script type="text/javascript" src="vendors/angular-animate.min.js"></script>
+  <!-- Client JS -->
+  <script type="text/javascript" src="scripts/client.js"></script>
+  <!-- Bootstrap -->
+<link rel="stylesheet" href="styles/bootstrap.css"
+    crossorigin="anonymous"></script>
+  <script src="vendors/ui-bootstrap-tpls.js"></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/57b1dead55.js"></script>
+<!-- Controllers -->
+<script src="scripts/controllers/home.controller.js"></script>
+</head>
+<body ng-app="myApp">
+  <div ng-include="'/templates/partials/nav.html'"></div>
+  <main ng-view></main>
+  
+
+</body>
+</html>
