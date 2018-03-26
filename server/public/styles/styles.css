@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
 body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -30,6 +31,7 @@ h1 {
 .navbar-brand {
    font-size: 34px;
    float: none;
+   font-family: 'Fredoka One', cursive;
 }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav>li>a {
@@ -49,6 +51,7 @@ h1 {
   height: 1px;
   border: 0;
   border-top: 1px solid rgba(138, 132, 226, 1);
+  width: 90%;
 }
 main {
   margin-top: 100px;
