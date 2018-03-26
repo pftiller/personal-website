@@ -10,6 +10,16 @@ body {
 h1 {
   font-size: 32px;
 }
+p {
+  text-align:left;
+}
+.box p {
+  padding:0 25px;
+}
+
+.center {
+  text-align: center;
+}
 /* Navigation Styles */
 .navbar-default {
   background-color: #000;
@@ -221,28 +231,84 @@ footer ul li {
   display: inline-block;
 }
 
-a.social {
-  display: inline-block;
-  text-indent: -9999px;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
-  opacity: .4;
-  transition: all .5s;
+.technologies {
+  width: auto;
+  -webkit-padding-start: 10px;
 }
-a.twitter {
-  background-image: url(/assets/images/twitter.svg);
+.technologies li {
+  width: 100px;
+  list-style: none;
+  text-align: center;
+  padding: 0 15px 5px;
+  float:left;
+
 }
-a.linkedin {
-  background-image: url(/assets/images/linkedin.svg);
+.experience,
+.education {
+  min-height: 475px;
 }
-a.github {
-  background-image: url(/assets/images/github.svg);
+.education h5,
+.education h6,
+.education p {
+  text-align: left;
 }
-a.social:hover {
-  opacity: 1;
+.ed-entry {
+  padding-bottom:10px;
 }
+li.html5::before {
+  content: url(/assets/images/html-sm.png);
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.css3::before {
+  content: url(/assets/images/css-sm.png);
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.bootstrap::before{
+  content: url(/assets/images/bootstrap-sm.png);
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.javascript::before {
+  content: url(/assets/images/javascript-sm.png);
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.jquery::before {
+  content: url(/assets/images/jquery-sm.png);
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.node::before {
+  content: url(/assets/images/node-sm.png);
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.postgresql::before {
+  content: url(/assets/images/postgresql-sm.png);
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.mongo::before {
+  content: url(/assets/images/mongodb-sm.png);
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.angularjs::before {
+  content: url(/assets/images/angularjs-sm.png);
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.material::before {
+  content: url(/assets/images/material-sm.png);
+  margin-right:15px;
+  vertical-align: -50%;
+}
+
+
+
+
 .clearfix {
   clear: both;
 }
