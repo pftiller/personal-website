@@ -1,4 +1,3 @@
-myApp.controller('HomeController', ['$scope', '$location', function ($scope, $location) {
+myApp.controller('HomeController', [ function () {
     let self = this;
-    $locationProvider.html5Mode(true);
 }]);

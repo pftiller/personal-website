@@ -1,3 +1,3 @@
-myApp.controller('NavController', ['$scope', function ($scope) {
+myApp.controller('NavController', [function () {
     let self = this;
 }]);
