@@ -324,8 +324,16 @@ li.material::before {
 .clearfix {
   clear: both;
 }
+.projects {
+  height:850px;
+}
 
-
+.project-example {
+  display: inline-block;
+  float: left;
+  width:45%;
+  margin:0 2.5%;
+}
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   .box {
