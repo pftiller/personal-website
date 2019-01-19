@@ -271,56 +271,70 @@ footer ul li {
   padding-bottom:10px;
 }
 li.html5::before {
-  content: url(/assets/images/html-sm.png);
+  content: url("/assets/images/html-sm.png");
   margin-right:15px;
   vertical-align: -50%;
 }
 li.css3::before {
-  content: url(/assets/images/css-sm.png);
+  content: url("/assets/images/css-sm.png");
   margin-right:15px;
   vertical-align: -50%;
 }
 li.bootstrap::before{
-  content: url(/assets/images/bootstrap-sm.png);
+  content: url("/assets/images/bootstrap-sm.png");
   margin-right:15px;
   vertical-align: -50%;
 }
 li.javascript::before {
-  content: url(/assets/images/javascript-sm.png);
+  content: url("/assets/images/javascript-sm.png");
   margin-right:15px;
   vertical-align: -50%;
 }
 li.jquery::before {
-  content: url(/assets/images/jquery-sm.png);
+  content: url("/assets/images/jquery-sm.png");
   margin-right:15px;
   vertical-align: -50%;
 }
 li.node::before {
-  content: url(/assets/images/node-sm.png);
+  content: url("/assets/images/node-sm.png");
   margin-right:15px;
   vertical-align: -50%;
 }
 li.postgresql::before {
-  content: url(/assets/images/postgresql-sm.png);
+  content: url("/assets/images/postgresql-sm.png");
   margin-right:15px;
   vertical-align: -50%;
 }
 li.mongo::before {
-  content: url(/assets/images/mongodb-sm.png);
+  content: url("/assets/images/mongodb-sm.png");
   margin-right:15px;
   vertical-align: -50%;
 }
 li.angularjs::before {
-  content: url(/assets/images/angularjs-sm.png);
+  content: url("/assets/images/angularjs-sm.png");
   margin-right:15px;
   vertical-align: -50%;
 }
 li.material::before {
-  content: url(/assets/images/material-sm.png);
+  content: url("/assets/images/material-sm.png");
   margin-right:15px;
   vertical-align: -50%;
 }
-
+li.reactjs::before {
+  content: url("/assets/images/reactjs-sm.png");
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.aws::before {
+  content: url("/assets/images/aws-sm.png");
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.gcloud::before {
+  content: url("/assets/images/gcloud-sm.png");
+  margin-right:15px;
+  vertical-align: -50%;
+}
 .clearfix {
   clear: both;
 }
