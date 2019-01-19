@@ -256,11 +256,9 @@ footer ul li {
   float:left;
 
 }
-
-
-.experience,
-.education {
+.experience, .education {
   min-height: 475px;
+  margin-bottom: 20px;
 }
 .education h5,
 .education h6,
@@ -339,14 +337,25 @@ li.gcloud::before {
   clear: both;
 }
 .projects {
-  height:850px;
+  height: 1475px;
+  margin-top:10px;
 }
-
-.project-example {
+.iframe {
+  position: relative;
+  width: 100%;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.project-example, .project-example2 {
   display: inline-block;
-  float: left;
-  width:45%;
-  margin:0 2.5%;
+  width: 90%;
+}
+.project-example {
+  margin: 0 2.5%;
+}
+.project-example2 {
+  margin: 10px 2.5%;
 }
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
@@ -407,7 +416,28 @@ li.gcloud::before {
   main p {
     line-height: 1.6em;
   }
-
+  .projects {
+    height: 1050px;
+  }
+  .iframe {
+    position: relative;
+    width: 100%;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .project-example {
+    display: inline-block;
+    float: left;
+    width: 45%;
+    margin: 0 2.5%;
+  }
+  .project-example2 {
+    display: inline-block;
+    float: none;
+    width:90%;
+    margin:10px auto;
+  }
   footer {
     font-size: 1.3em;
     max-width: 1200px;
