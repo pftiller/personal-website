@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
 body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -15,6 +21,7 @@ p {
 }
 .box p {
   padding:0 25px;
+  margin-top: 8px;
 }
 
 .center {
@@ -89,7 +96,7 @@ main {
   background-color: #D9D9D9;  
   line-height: 1.5;
   height:100%;
-  min-height:250px;
+  min-height: 450px;
   margin: 10px auto;
   font-size:14px;
 
@@ -105,9 +112,6 @@ main {
   float:left;
   width:50%;
  
-}
-.profile-info p {
-  font-size:12px;
 }
 /*flip */
 body {
@@ -243,29 +247,40 @@ footer ul {
 footer ul li {
   display: inline-block;
 }
-
-.technologies {
-  width: auto;
-  -webkit-padding-start: 20px;
+#technologies {
+  margin: 30px auto 0;
+  width: 90%;
 }
-.technologies li {
+.group {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  align-content: space-between;
+}
+.group li {
   width: 100px;
+  font-size: 12px;
   list-style: none;
   text-align: center;
   padding: 0 15px 5px;
-  float:left;
+  float: left;
+  margin: 10px;
 
 }
-.experience, .education {
+#experience, #education {
   min-height: 475px;
   margin-bottom: 20px;
 }
-.education h5,
-.education h6,
-.education p {
+#education h5,
+#education h6,
+#education p {
   text-align: left;
 }
 .ed-entry {
+  width: 90%;
+  margin:8px auto 0;
   padding-bottom:10px;
 }
 li.html5::before {
@@ -333,6 +348,26 @@ li.gcloud::before {
   margin-right:15px;
   vertical-align: -50%;
 }
+li.analytics::before {
+  content: url("/assets/images/analytics-sm.png");
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.gtm::before {
+  content: url("/assets/images/gtm-sm.png");
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.tableau::before {
+  content: url("/assets/images/tableau-sm.png");
+  margin-right:15px;
+  vertical-align: -50%;
+}
+li.gds::before {
+  content: url("/assets/images/gds-sm.png");
+  margin-right:15px;
+  vertical-align: -50%;
+}
 .clearfix {
   clear: both;
 }
@@ -357,24 +392,37 @@ li.gcloud::before {
 .project-example2 {
   margin: 10px 2.5%;
 }
+
 /* Styles for larger screens */
-@media screen and (min-width: 720px) {
-  .box {
-    padding-right: 5p;
+@media screen and (min-width: 768px) {
+  #technologies {
+    margin-top: 15px;
+    width: 95%;
+  }
+  .group {
+    justify-content: space-evenly;
+  }
+  .group li {
+    width: 75px;
   }
 
-  .profile {
+  .box {
+    padding-right: 5px;
+  }
+
+  #profile {
     min-height: 250px;
   }
   .gutter .col-md-4:last-child {
     border-right: none;
   }
   
-.education {
+#education {
   float:right;
 }
-
-
+#experience, #education {
+  min-height: 675px;
+}
 .navbar-header {
     display: inline-block;
     float: left;
@@ -443,6 +491,9 @@ li.gcloud::before {
     max-width: 1200px;
     margin: 40px auto;
   }
-
 }
-
+@media screen and (min-width: 1000px) {
+  #experience, #education {
+    min-height: 525px;
+  }
+}
