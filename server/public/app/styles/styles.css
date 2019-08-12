@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
 ul {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -9,51 +10,60 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
+
 .sixty {
-  width:60%;
-  margin:-5px auto 0;
+  width: 60%;
+  margin: -5px auto 0;
 }
+
 h1 {
   font-size: 32px;
 }
+
 p {
-  text-align:left;
+  text-align: left;
 }
+
 .box p {
-  padding:0 25px;
+  padding: 0 25px;
   margin-top: 8px;
 }
 
 .center {
   text-align: center;
-  margin-top:45px;
+  margin-top: 45px;
 }
+
 /* Navigation Styles */
 .navbar-default {
   background-color: #000;
   border: none;
 }
+
 .navbar {
-  border-radius:0;
-  margin-bottom:0;
-  position:fixed;
-  width:100%;
-  z-index:5;
-  top:0;
-  left:0;
+  border-radius: 0;
+  margin-bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  top: 0;
+  left: 0;
 }
+
 .navbar-header {
   padding: 15px 0 10px;
-  float:none;
+  float: none;
 }
+
 .navbar-brand {
-   font-size: 34px;
-   float: none;
-   font-family: 'Fredoka One', cursive;
+  font-size: 34px;
+  float: none;
+  font-family: 'Fredoka One', cursive;
 }
+
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav>li>a {
-  color:#D9D9D9;
+  color: #D9D9D9;
 }
 
 
@@ -63,17 +73,20 @@ p {
   transition: all .5s;
 
 }
+
 .purple {
-  margin:-5px auto 5px;
+  margin: -5px auto 5px;
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid rgba(138, 132, 226, 1);
   width: 90%;
 }
+
 main {
   margin-top: 100px;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -84,105 +97,115 @@ main {
 }
 
 .nav a {
-  font-size:20px;
+  font-size: 20px;
 }
+
 .navbar-nav>li>a {
   padding-bottom: 15px;
 }
 
 .box {
   padding: 10px;
-  border-radius:5px;
-  background-color: #D9D9D9;  
+  border-radius: 5px;
+  background-color: #D9D9D9;
   line-height: 1.5;
-  height:100%;
-  min-height: 450px;
+  height: 100%;
   margin: 10px auto;
-  font-size:14px;
+  font-size: 14px;
+  min-height: 325px;
 
 }
 
-.profile {
-  min-height: 450px;
-}
 .header h1 {
   margin-top: 5px;
 }
-.profile-info {
-  float:left;
-  width:50%;
- 
-}
+
+
 /*flip */
 body {
-  background: #ccc;   
- }
- .flip {
-   -webkit-perspective: 800;
-    float:right;
-     position: relative;
-     margin-top:35px;
+  background: #ccc;
+}
 
- }
- .flip .card.flipped {
-   -webkit-transform: rotatey(-180deg);
-  
- }
- .profile-image {
+.flip {
+  -webkit-perspective: 800;
+  float: right;
+  position: relative;
+  shape-outside: circle();
+
+}
+
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+
+}
+
+.profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
- }
- .flip .card {
-  float:right;
+
+}
+
+.profile-info>p {
+  width: 75%;
+}
+
+.flip .card {
+  float: right;
   width: 150px;
   height: 150px;
   transition: all 1s;
-  -webkit-transition: all 1s; 
-   -webkit-transform-style: preserve-3d;
- }
- .flip .card .face {
-   position: absolute;
-   -webkit-backface-visibility: hidden ;
-   z-index: 2;
+  -webkit-transition: all 1s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
- }
- .flip .card .face p {
-  font-size:10px;
-  padding:5px;
+.flip .card .face {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  z-index: 2;
+
+}
+
+.flip .card .face p {
+  font-size: 10px;
+  padding: 5px;
 }
 
 .margin {
-  margin-top:40px;
+  margin-top: 40px;
 }
- .flip .card .front {
-   position: absolute;
-   border-radius:50%;
-   z-index: 1;
 
-     cursor: pointer;
-     background: url('/assets/images/paul.jpg') no-repeat 0 center;
-     border: 3px solid white;
- }
- .flip .card .back {
-   -webkit-transform: rotatey(-180deg);
-   border-radius:50%;
-     cursor: pointer;
-     min-width: 150px;
-     min-height: 150px;
-     background-color: rgba(121, 190, 238, 1);
-     color:#fff;
-     border: 3px solid white;
-     vertical-align: 50%;
- }
+.flip .card .front {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  background: url('/assets/images/paul.jpg') no-repeat 0 center;
+  border: 3px solid white;
+}
+
+.flip .card .back {
+  -webkit-transform: rotatey(-180deg);
+  border-radius: 50%;
+  cursor: pointer;
+  min-width: 150px;
+  min-height: 150px;
+  background-color: rgba(121, 190, 238, 1);
+  color: #fff;
+  border: 3px solid white;
+  vertical-align: 50%;
+}
+
 .back p {
- text-align: center;
- margin: 5px auto;
- }
-
-main {
-  
+  text-align: center;
+  margin: 5px auto;
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -190,24 +213,13 @@ main {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
+
+
 .location {
   background-color: #222;
   color: yellow;
 }
-/* .card {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: left;
-
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-  transition: all .5s;
-}
-.card:hover {
-  border-color: orange;
-} */
 
 ul.skills {
   padding: 0;
@@ -247,10 +259,12 @@ footer ul {
 footer ul li {
   display: inline-block;
 }
+
 #technologies {
   margin: 30px auto 0;
   width: 90%;
 }
+
 .group {
   width: auto;
   display: flex;
@@ -259,6 +273,7 @@ footer ul li {
   align-items: center;
   align-content: space-between;
 }
+
 .group li {
   width: 100px;
   font-size: 12px;
@@ -269,112 +284,136 @@ footer ul li {
   margin: 10px;
 
 }
-#experience, #education {
+
+#experience,
+#education {
   min-height: 475px;
   margin-bottom: 20px;
 }
+
 #education h5,
 #education h6,
 #education p {
   text-align: left;
 }
+
 .ed-entry {
   width: 90%;
-  margin:8px auto 0;
-  padding-bottom:10px;
+  margin: 8px auto 0;
+  padding-bottom: 10px;
 }
+
 li.html5::before {
   content: url("/assets/images/html-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.css3::before {
   content: url("/assets/images/css-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
-li.bootstrap::before{
+
+li.bootstrap::before {
   content: url("/assets/images/bootstrap-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.javascript::before {
   content: url("/assets/images/javascript-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.jquery::before {
   content: url("/assets/images/jquery-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.node::before {
   content: url("/assets/images/node-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.postgresql::before {
   content: url("/assets/images/postgresql-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.mongo::before {
   content: url("/assets/images/mongodb-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.angularjs::before {
   content: url("/assets/images/angularjs-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.material::before {
   content: url("/assets/images/material-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.reactjs::before {
   content: url("/assets/images/reactjs-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.aws::before {
   content: url("/assets/images/aws-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.gcloud::before {
   content: url("/assets/images/gcloud-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.analytics::before {
   content: url("/assets/images/analytics-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.gtm::before {
   content: url("/assets/images/gtm-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.tableau::before {
   content: url("/assets/images/tableau-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 li.gds::before {
   content: url("/assets/images/gds-sm.png");
-  margin-right:15px;
+  margin-right: 15px;
   vertical-align: -50%;
 }
+
 .clearfix {
   clear: both;
 }
+
 .projects {
   height: 1475px;
-  margin-top:10px;
+  margin-top: 10px;
 }
+
 .iframe {
   position: relative;
   width: 100%;
@@ -382,26 +421,64 @@ li.gds::before {
   border-radius: 15px;
   overflow: hidden;
 }
-.project-example, .project-example2 {
+
+.project-example,
+.project-example2 {
   display: inline-block;
   width: 90%;
 }
+
 .project-example {
   margin: 0 2.5%;
 }
+
 .project-example2 {
   margin: 10px 2.5%;
 }
 
+/* For mobile phones: */
+@media (max-width: 480px) {
+  .profile-image p {
+    text-align: justify;
+  }
+
+  .flip {
+    margin-top: 15px;
+    margin-left: 8px;
+    margin: 15px 5px 10px 15px;
+  }
+
+  .group {
+    justify-content: space-around;
+  }
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 768px) {
+  .profile-info>p {
+    text-align: left;
+    width: 65%;
+    display: inline-block;
+    padding: 0;
+  }
+
+  .flip {
+    float: right;
+    margin-top: 0;
+    margin-left: 25px;
+    margin-right: 5px;
+    display: inline-block;
+  }
+
   #technologies {
     margin-top: 15px;
     width: 95%;
   }
+
   .group {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
+
   .group li {
     width: 75px;
   }
@@ -411,37 +488,41 @@ li.gds::before {
   }
 
   #profile {
-    min-height: 250px;
+    min-height: 300px;
   }
+
+  #education {
+    float: right;
+  }
+
+  #experience,
+  #education {
+    min-height: 675px;
+  }
+
   .gutter .col-md-4:last-child {
     border-right: none;
   }
-  
-#education {
-  float:right;
-}
-#experience, #education {
-  min-height: 675px;
-}
-.navbar-header {
+
+  .navbar-header {
     display: inline-block;
     float: left;
-}
+  }
 
-  .profile-info {
-    width:70%;
-  }
   .navbar-default .navbar-brand {
-    float:left;
+    float: left;
   }
+
   .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
   }
+
   .flip {
     margin-right: 15px;
   }
@@ -464,9 +545,11 @@ li.gds::before {
   main p {
     line-height: 1.6em;
   }
+
   .projects {
     height: 1050px;
   }
+
   .iframe {
     position: relative;
     width: 100%;
@@ -474,26 +557,33 @@ li.gds::before {
     border-radius: 15px;
     overflow: hidden;
   }
+
   .project-example {
     display: inline-block;
     float: left;
     width: 45%;
     margin: 0 2.5%;
   }
+
   .project-example2 {
     display: inline-block;
     float: none;
-    width:90%;
-    margin:10px auto;
+    width: 90%;
+    margin: 10px auto;
   }
+
   footer {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
   }
+
 }
+
 @media screen and (min-width: 1000px) {
-  #experience, #education {
+
+  #experience,
+  #education {
     min-height: 525px;
   }
 }
