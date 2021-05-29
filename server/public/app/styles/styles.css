@@ -35,11 +35,6 @@ p {
 }
 
 /* Navigation Styles */
-.navbar-default {
-  background-color: #000;
-  border: none;
-}
-
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
@@ -48,8 +43,16 @@ p {
   z-index: 5;
   top: 0;
   left: 0;
+  background-color: #000;
+  border: none;
 }
-
+.navbar-default {
+  margin: auto;
+  width: 95%;
+  max-width:1200px;
+  background-color: transparent;
+  border: none;
+}
 .navbar-header {
   padding: 15px 0 10px;
   float: none;
@@ -86,7 +89,10 @@ p {
 main {
   margin-top: 100px;
 }
-
+main p {
+  line-height: 1.6em;
+  font-size: 1.15em;
+}
 .nav {
   display: flex;
   justify-content: space-around;
@@ -134,11 +140,6 @@ body {
 
 }
 
-.flip .card.flipped {
-  -webkit-transform: rotatey(-180deg);
-
-}
-
 .profile-image {
   width: 150px;
   height: 150px;
@@ -161,7 +162,6 @@ body {
   shape-outside: circle();
   background: none;
   border: none;
-  cursor: pointer;
 }
 
 .flip .card .face {
@@ -184,28 +184,9 @@ body {
   position: absolute;
   border-radius: 50%;
   z-index: 1;
-  cursor: pointer;
   background: url('/assets/images/paul.jpg') no-repeat 0 center;
   border: 3px solid white;
 }
-
-.flip .card .back {
-  -webkit-transform: rotatey(-180deg);
-  border-radius: 50%;
-  cursor: pointer;
-  min-width: 150px;
-  min-height: 150px;
-  background-color: rgba(121, 190, 238, 1);
-  color: #fff;
-  border: 3px solid white;
-  vertical-align: 50%;
-}
-
-.back p {
-  text-align: center;
-  margin: 5px auto;
-}
-
 .tag {
   background-color: #efefef;
   color: black;
@@ -464,7 +445,7 @@ li.gds::before {
 
   .flip {
     float: right;
-    margin-top: 0;
+    margin-top: 5px;
     margin-left: 25px;
     margin-right: 5px;
     display: inline-block;
@@ -541,11 +522,6 @@ li.gds::before {
     padding-top: 20px;
     margin-top: 60px;
   }
-
-  main p {
-    line-height: 1.6em;
-  }
-
   .projects {
     height: 1050px;
   }
