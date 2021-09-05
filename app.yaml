@@ -1,14 +1,24 @@
 runtime: python27
+api_version: '1'
+env: standard
 threadsafe: true
-api_version: 1
-
+instance_class: F1
 handlers:
-- url: /(.+)
-  static_files: app/\1
-  upload: app/.*
-  secure: always
-
-- url: /
-  static_files: app/index.html
-  upload: app/index.html
-  secure: always
+  - url: /(.+)
+    secure: always
+    application_readable: false
+    static_files: app/\1
+    require_matching_file: false
+    upload: app/.*
+  - url: /
+    secure: always
+    application_readable: false
+    static_files: app/index.html
+    require_matching_file: false
+    upload: app/index.html
+automatic_scaling:
+  min_idle_instances: automatic
+  max_idle_instances: automatic
+  min_pending_latency: automatic
+  max_pending_latency: automatic
+network: {}
