@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 
-ul {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
+.row {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 body {
@@ -26,7 +26,7 @@ p {
 
 .box p {
   padding: 0 25px;
-  margin-top: 8px;
+  margin-top: 10%;
 }
 
 .center {
@@ -46,13 +46,15 @@ p {
   background-color: #000;
   border: none;
 }
+
 .navbar-default {
   margin: auto;
   width: 95%;
-  max-width:1200px;
+  max-width: 1200px;
   background-color: transparent;
   border: none;
 }
+
 .navbar-header {
   padding: 15px 0 10px;
   float: none;
@@ -69,12 +71,10 @@ p {
   color: #D9D9D9;
 }
 
-
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav>li>a:hover {
   color: #6633ff;
   transition: all .5s;
-
 }
 
 .purple {
@@ -89,10 +89,7 @@ p {
 main {
   margin-top: 100px;
 }
-main p {
-  line-height: 1.6em;
-  font-size: 1.15em;
-}
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -114,47 +111,42 @@ main p {
   padding: 10px;
   border-radius: 5px;
   background-color: #D9D9D9;
-  line-height: 1.5;
   height: 100%;
   margin: 10px auto;
-  font-size: 14px;
-  min-height: 325px;
-
+  min-height: 175px;
 }
 
 .header h1 {
   margin-top: 5px;
 }
 
-
 /*flip */
 body {
   background: #ccc;
 }
 
-.flip {
-  -webkit-perspective: 800;
+.profile-info {
   float: right;
-  position: relative;
-  shape-outside: circle();
-
+  min-width: 85%;
 }
 
 .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-
 }
 
 .profile-info>p {
-  width: 75%;
+  width: 85%;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 1em;
 }
 
-.flip .card {
-  float: right;
-  width: 150px;
-  height: 150px;
+.card {
+  float: left;
+  width: 175px;
+  height: 175px;
   transition: all 1s;
   -webkit-transition: all 1s;
   -webkit-transform-style: preserve-3d;
@@ -164,14 +156,13 @@ body {
   border: none;
 }
 
-.flip .card .face {
+.card .face {
   position: absolute;
   -webkit-backface-visibility: hidden;
   z-index: 2;
-
 }
 
-.flip .card .face p {
+.card .face p {
   font-size: 10px;
   padding: 5px;
 }
@@ -180,13 +171,14 @@ body {
   margin-top: 40px;
 }
 
-.flip .card .front {
+.card .front {
   position: absolute;
   border-radius: 50%;
   z-index: 1;
   background: url('/assets/images/paul.jpg') no-repeat 0 center;
   border: 3px solid white;
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -196,28 +188,9 @@ body {
   margin: 10px auto;
 }
 
-
 .location {
   background-color: #222;
   color: yellow;
-}
-
-ul.skills {
-  padding: 0;
-  text-align: center;
-}
-
-.skills li {
-  border-radius: 6px;
-  display: inline-block;
-  background: #ff9904;
-  color: white;
-  padding: 5px 10px;
-  margin: 2px;
-}
-
-.skills li:nth-child(odd) {
-  background: #0399ff;
 }
 
 footer {
@@ -263,170 +236,16 @@ footer ul li {
   padding: 0 15px 5px;
   float: left;
   margin: 10px;
-
-}
-
-#experience,
-#education {
-  min-height: 475px;
-  margin-bottom: 20px;
-}
-
-#education h5,
-#education h6,
-#education p {
-  text-align: left;
-}
-
-.ed-entry {
-  width: 90%;
-  margin: 8px auto 0;
-  padding-bottom: 10px;
-}
-
-li.html5::before {
-  content: url("/assets/images/html-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.css3::before {
-  content: url("/assets/images/css-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.bootstrap::before {
-  content: url("/assets/images/bootstrap-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.javascript::before {
-  content: url("/assets/images/javascript-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.jquery::before {
-  content: url("/assets/images/jquery-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.node::before {
-  content: url("/assets/images/node-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.postgresql::before {
-  content: url("/assets/images/postgresql-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.mongo::before {
-  content: url("/assets/images/mongodb-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.angularjs::before {
-  content: url("/assets/images/angularjs-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.material::before {
-  content: url("/assets/images/material-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.reactjs::before {
-  content: url("/assets/images/reactjs-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.aws::before {
-  content: url("/assets/images/aws-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.gcloud::before {
-  content: url("/assets/images/gcloud-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.analytics::before {
-  content: url("/assets/images/analytics-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.gtm::before {
-  content: url("/assets/images/gtm-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.tableau::before {
-  content: url("/assets/images/tableau-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
-}
-
-li.gds::before {
-  content: url("/assets/images/gds-sm.png");
-  margin-right: 15px;
-  vertical-align: -50%;
 }
 
 .clearfix {
   clear: both;
 }
 
-.projects {
-  height: 1475px;
-  margin-top: 10px;
-}
-
-.iframe {
-  position: relative;
-  width: 100%;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.project-example,
-.project-example2 {
-  display: inline-block;
-  width: 90%;
-}
-
-.project-example {
-  margin: 0 2.5%;
-}
-
-.project-example2 {
-  margin: 10px 2.5%;
-}
-
 /* For mobile phones: */
 @media (max-width: 480px) {
   .profile-image p {
     text-align: justify;
-  }
-
-  .flip {
-    margin-top: 15px;
-    margin-left: 8px;
-    margin: 15px 5px 10px 15px;
   }
 
   .group {
@@ -440,15 +259,12 @@ li.gds::before {
     text-align: left;
     width: 65%;
     display: inline-block;
-    padding: 0;
+    font-style: italic;
+    font-size: 1.25em;
   }
 
-  .flip {
-    float: right;
-    margin-top: 5px;
-    margin-left: 25px;
-    margin-right: 5px;
-    display: inline-block;
+  .profile-info {
+    margin-top: 20px;
   }
 
   #technologies {
@@ -469,16 +285,8 @@ li.gds::before {
   }
 
   #profile {
-    min-height: 300px;
-  }
-
-  #education {
-    float: right;
-  }
-
-  #experience,
-  #education {
-    min-height: 675px;
+    min-height: 225px;
+    max-width: 800px;
   }
 
   .gutter .col-md-4:last-child {
@@ -504,10 +312,6 @@ li.gds::before {
     margin: 0 auto;
   }
 
-  .flip {
-    margin-right: 15px;
-  }
-
   header {
     min-height: 470px;
   }
@@ -517,49 +321,14 @@ li.gds::before {
     padding: 15px 30px;
   }
 
-
   main {
     padding-top: 20px;
     margin-top: 60px;
-  }
-  .projects {
-    height: 1050px;
-  }
-
-  .iframe {
-    position: relative;
-    width: 100%;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    overflow: hidden;
-  }
-
-  .project-example {
-    display: inline-block;
-    float: left;
-    width: 45%;
-    margin: 0 2.5%;
-  }
-
-  .project-example2 {
-    display: inline-block;
-    float: none;
-    width: 90%;
-    margin: 10px auto;
   }
 
   footer {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
-  }
-
-}
-
-@media screen and (min-width: 1000px) {
-
-  #experience,
-  #education {
-    min-height: 525px;
   }
 }
